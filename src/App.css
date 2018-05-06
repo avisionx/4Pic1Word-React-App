@@ -1,0 +1,131 @@
+:root {
+  --light1: #EFF1C5;
+  --dark1: #035E7B;
+  --light2: #E3E7AF;
+  --dark2: #002E2C;
+  --mid: #A2A77F;
+}
+
+.Home {
+  height: 100vh;
+  width: 100vw;
+  background-color: #EFF1C5;
+  color: var(--dark2);
+}
+
+.top{
+  position: absolute;
+  top: 30vh;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+.bottom{
+  position: absolute;
+  top: 50vh;
+  font-size: 20px;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+}
+
+.player{
+  position: absolute;
+  padding: 20px 30px;
+  width: 80px;
+  left: 50vw;
+  transform: translateX(-50%);
+  cursor: pointer;
+  border: 2px solid var(--dark1);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+.player:hover{
+  background-color: var(--dark1);
+  color: var(--light2);
+}
+
+.wrapper{
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--light1);
+  text-align: center;
+  align-content: center;
+}
+
+.image{
+  height: 150px;
+  width: 150px;
+  padding: 50px;
+}
+
+.controls{
+  align-content: center;
+  text-align: center;
+  height: auto;
+  width: 100vw;
+}
+
+.ans{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 80px;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+
+.select{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  width: 300px;
+  height: 80px;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.check{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(200%);
+  width: 300px;
+  height: 80px;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+
+.box{
+  color: var(--dark2);
+  background-color: var(--mid);
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  padding-top: 16px;
+  text-transform: uppercase;
+}
+
+.empty{
+  color: var(--dark2);
+  background-color: var(--mid);
+}
+
+.fill{
+  color: var(--light2);
+  background-color: var(--dark1);
+}
+
+.green{
+  color: var(--light2);
+  background-color: green;
+}
+
+.red{
+  color: var(--light1);
+  background-color: red;
+}
